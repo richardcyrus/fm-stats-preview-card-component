@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+:root {
+  --border-radius: 8px;
+  --color-accent: hsl(277, 64%, 61%);
+  --color-card-background: hsl(244, 38%, 16%);
+  --color-main-background: hsl(233, 47%, 7%);
+  --color-main-heading: hsl(0, 0%, 100%);
+  --color-stats-heading: hsla(0, 0%, 100%, 0.6);
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --font-family-headings: 'Inter', sans-serif;
+  --font-family: 'Lexend Deca', sans-serif;
+  --font-size-h1: 1.8rem;
+  --font-size-text: .9375rem;
+  --font-weight-normal: 400;
+  --font-weight-strong: 700;
+}
+
+/*#region Modern CSS Reset*/
+
+/*
+ * Modern CSS Reset
+ * @link https://github.com/hankchizljaw/modern-css-reset
+ */
+
+ /* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests
+ * default styling will be removed
+ */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*#endregion*/
+
+/*#region Base styles*/
+body {
+  background-color: var(--color-main-background);
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-normal);
+}
+
+h1, .stats {
+  color: var(--color-main-heading);
+  font-family: var(--font-family-headings);
+  font-weight: var(--font-weight-strong);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  line-height: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.container {
+  background-color: var(--color-card-background);
+  border-radius: var(--border-radius);
+  margin: 1.5rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container > p {
+  line-height: 1.8;
+  margin-top: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+header {
+  background: var(--color-accent);
+  min-width: 100%;
+  /* overflow: hidden; */
+}
+
+picture {
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.stats-grid {
+  margin-top: 2.5rem;
+}
+
+.stats-grid > div {
+  line-height: 1.2;
+  margin-top: 2rem;
+}
+
+.stats {
+  font-size: 1.5rem;
+}
+
+.stats-heading {
+  color: var(--color-stats-heading);
+  font-family: var(--font-family-headings);
+  font-size: .875rem;
+  font-variant: small-caps;
+  letter-spacing: .07rem;
+}
+
+/*#endregion*/
+
+/*#region Attribution */
+.attribution {
+  font-size: .6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*#endregion*/
