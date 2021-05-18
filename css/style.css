@@ -135,7 +135,7 @@ h1 {
   text-align: center;
 }
 
-.container > p {
+.lead {
   line-height: 1.8;
   margin-top: 1.5rem;
   padding: 0 1.5rem;
@@ -144,12 +144,13 @@ h1 {
 header {
   background: var(--color-accent);
   min-width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 picture {
   object-fit: cover;
   opacity: 0.5;
+  min-width: 100%;
 }
 
 .stats-grid {
@@ -178,10 +179,138 @@ picture {
 /*#region Attribution */
 .attribution {
   font-size: .6875rem;
+  margin-bottom: .5rem;
+  padding-bottom: 1rem;
   text-align: center;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/*#endregion*/
+
+/*#region small wide screen design */
+@media screen and (min-width: 701px) {
+  :root {
+    --font-size-h1: 1.5rem;
+    --font-size-text: .875rem;
+  }
+
+  .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .header {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .lead, .stats-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    margin-top: 1rem;
+  }
+
+  .lead {
+    line-height: inherit;
+    margin-top: 1rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1rem;
+    padding-bottom: .5rem;
+  }
+
+  .stats-grid > div {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .stats-grid {
+    margin-top: 1.5rem;
+    padding-bottom: .5rem;
+  }
+}
+
+/*#endregion*/
+
+/*#region medium screen design */
+@media screen and (min-width: 768px) {
+  .container {
+    text-align: left;
+  }
+
+  .lead, .stats-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .stats-grid > div {
+    line-height: inherit;
+  }
+}
+/*#endregion*/
+
+/*#region large screen design */
+@media screen and (min-width: 992px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-text: .9375rem;
+  }
+
+  .container {
+    max-width: 68.125rem;
+  }
+
+  .content {
+    margin-top: 2rem;
+  }
+
+  h1, .lead, .stats-grid {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+
+  h1 {
+    line-height: 1.3;
+  }
+
+  .lead {
+    letter-spacing: .04rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+  }
+
+  .stats-grid {
+    margin-top: 2.5rem;
+  }
+}
+/*#endregion*/
+
+/*#region extra large screen */
+@media screen and (min-width: 1200px) {
+  :root {
+    --font-size-h1: 2.5rem;
+  }
+
+  body {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .stats-heading {
+    font-family: var(--font-family);
+    letter-spacing: .09rem;
+  }
 }
 /*#endregion*/
