@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Stats preview card component</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <section class="container">
+      <header>
+        <picture>
+          <source media="(max-width: 767px)" srcset="./images/image-header-mobile.jpg">
+          <source media="(min-width: 768px)" srcset="./images/image-header-desktop.jpg">
+          <img src="./images/image-header-desktop.jpg" alt="Women who code">
+        </picture>
+      </header>
+
+      <h1>Get <span class="text-accent">insights</span> that help your business grow.</h1>
+
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.</p>
+
+      <div class="stats-grid">
+        <div>
+          <p class="stats">10k+</p>
+          <p class="stats-heading">companies</p>
+        </div>
+        <div>
+          <p class="stats">314</p>
+          <p class="stats-heading">templates</p>
+        </div>
+        <div>
+          <p class="stats">12M+</p>
+          <p class="stats-heading">queries</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="attribution" class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.richardcyrus.com">Richard Cyrus</a>.
+    </footer>
+  </body>
+</html>
