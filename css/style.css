@@ -196,6 +196,12 @@ picture {
     --font-size-text: .875rem;
   }
 
+  body {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+  }
+
   .container {
     display: grid;
     gap: 1rem;
@@ -300,12 +306,6 @@ picture {
 @media screen and (min-width: 1200px) {
   :root {
     --font-size-h1: 2.5rem;
-  }
-
-  body {
-    align-content: center;
-    display: grid;
-    justify-content: center;
   }
 
   .stats-heading {
