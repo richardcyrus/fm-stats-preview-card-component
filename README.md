@@ -39,8 +39,9 @@ Original Mobile Design | My Mobile Design
 
 ### Links
 
-- Solution URL: [https://github.com/richardcyrus/fm-stats-preview-card-component](https://github.com/richardcyrus/fm-stats-preview-card-component)
-- Live Site URL: [https://www.richardcyrus.com/fm-stats-preview-card-component/](https://www.richardcyrus.com/fm-stats-preview-card-component/)
+- [Solution URL](https://www.frontendmentor.io/solutions/stats-preview-card-component-gM4bTHktW)
+- [Repository URL](https://github.com/richardcyrus/fm-stats-preview-card-component)
+- [Live Site URL](https://www.richardcyrus.com/fm-stats-preview-card-component/)
 
 ## My process
 
